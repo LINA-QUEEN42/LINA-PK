@@ -149,7 +149,74 @@ device = {
         'fbca':fbca,
         'fbdm':fbdm}
         
-                
+        
+def main_apv():
+
+    imt="QUEEN=="
+
+    ak="LINA="
+
+    os.system('clear')
+
+    print(logo)
+
+    try:
+
+        key1=open('/data/data/com.termux/files/usr/bin/.akkkk-cov', 'r').read()
+
+    except IOError:
+
+        os.system("clear")
+
+        print(logo)
+        print ("YOUR TOKEN IS NOT APROVAL")     
+        print ("")
+
+        myid=uuid.uuid4().hex[:10].upper()
+
+        print ("  YOUR KEY : "+ak+myid+imt)
+
+        print ("•───────────────────────────────────────•")
+
+        kok=open('/data/data/com.termux/files/usr/bin/.akkkk-cov', 'w')
+
+        kok.write(myid+imt)
+
+        kok.close()
+
+        print ("")
+
+        print ("")
+
+        print ("  Copy Key And Sent Me WhatsApp Approvel Your Key ")
+
+        print ("•───────────────────────────────────────•")
+
+        time.sleep(3.5)
+
+        tks = 'Dear%20LINA%QUEEN,%20Please%20Approved%20My%20Token%20To%20Premium%20% 20% 20%20%20My%20%20Key%20%20:%20'+ak+''+myid+''+imt
+
+        os.system('am start https://wa.me/+923269916436?text=' + tks)
+
+        
+
+    r1=requests.get("https://raw.githubusercontent.com/LINA-QUEEN42/LINA-PK/main/Approval.txt").text
+
+    if key1 in r1:
+
+        menu()
+
+    else:
+
+        os.system("clear")
+
+        print(logo)
+        print ("    \033[1;32mYOUR KEY : "+ak+key1)     
+        time.sleep(3.5)
+
+        tks = 'Dear%20LINA%20QUEEN,%20Please%20Apporved%20My%20Key%20To%20Premium✓✓%20%20%20%20%20My%20%20Key%20%20:%20'+ak+''+key1
+
+        os.system('am start https://wa.me/+923269916436?text=' + tks)        
         
         
         
