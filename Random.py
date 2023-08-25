@@ -536,7 +536,7 @@ def api1(ids,names,passlist):
 				dimensions = __iam_genius.split('|')[2]
 				ffb=random.choice(fbks)
 				dvlk = random.choice(usr)
-				ua_string = f'{str(dvlk)} [FBAN/FB4A;FBAV/{str(application_version)};FBPN/com.facebook.katana;FBLC/en_PK;FBCR/null;FBBV/{str(application_version_code)};FBMF/{str(phone_company)};FBBD/{str(phone_company)};FBDV/{str(phone_company)};FBSV/8.1.0;;FBDM/'+'{density=2.75,height=1440,width=720};]'
+				ua_string = f'Dalvik/1.6.0 (Linux; U; Android 4.2.2; C2004 Build/15.2.A.2.5) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=2.0,width=720,height=1280};FBLC/en_US;FBRV/45904160;FBCR/Verizon;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G7102;FBSV/6.0;FBOP/1;FBCA/armeabi-v7a;]
 				li = ['28','29','210']
 				li2 = random.choice(li)
 				j1 = ''.join(random.choice(digits) for _ in range(2))
@@ -638,7 +638,7 @@ def api2(ids,names,passlist):
                         en = random.choice(['en_US','en_GB'])
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                        ua ='Davik/2.1.0 (Linux; U; Android 7.0.0; MMB29K Build/GT-P5100 [FBAN/FB4A;FBAV/241.0.0.41292;FBBV/975202462;FBDM/{density=2.75,width=720,height=9398};FBLC/pl_PL;FBCR/T-Mobile.pl;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.mlite;FBDV/MMB29K;FBSV/4.4.4;nullFBCA/armeabi-v7a:armeabi;]'
+                        ua ='Dalvik/1.6.0 (Linux; U; Android 5.0.1; SM-G920F Build/LRX22C) [FBAN/FB4A;FBAV/105.0.0.0.31;FBBV/49903780;FBDM/{density=3.5,width=1440,height=2560};FBLC/fr_FR;FBRV/49903780;FBCR/Orange;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G925F;FBSV/7.0;FBOP/1;FBCA/x86;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -714,7 +714,7 @@ def api3(ids,names,passlist):
                         fbrv = '0'
                         fban = 'FB4A'
                         fbpn = 'com.facebook.katana'
-                        ua = 'Davik/2.1.0 (Linux; U; Android '+android_version+'.0.1; '+model+' Build/'+build+') [FBAN/'+fban+';FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=3.0,width=1440,height=8797};FBLC/'+fblc+';FBRV/'+str(random.randint(000000000,999999999))+';FBCR/'+fbcr+';FBMF/'+fbmf+';FBBD/'+fbbd+';FBPN/'+fbpn+';FBDV/'+fbdv+';FBSV/'+fbsv+';FBOP/19;FBCA/'+fbca+';]'
+                        ua = 'Dalvik/1.6.0 (Linux; U; Android 6.0.1; Nexus 6P Build/ABC123) [FBAN/FB4A;FBAV/107.0.0.0.44;FBBV/52114722;FBDM/{density=2.75,width=1080,height=1920};FBLC/es_ES;FBRV/52114722;FBCR/Movistar;FBMF/Huawei;FBBD/Huawei;FBPN/com.facebook.katana;FBDV/NX549J;FBSV/8.1;FBOP/1;FBCA/armeabi;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -822,7 +822,7 @@ def api4(ids,names,passlist):
                         fbrv = '0'
                         fban = 'FB4A'
                         fbpn = 'com.facebook.katana'
-                        ua = 'Davik/2.1.0 (Linux; U; Android '+android_version+'.0.1; '+model+' Build/'+build+') [FBAN/'+fban+';FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=3.0,width=1080,height=2376};FBLC/'+fblc+';FBRV/'+str(random.randint(000000000,999999999))+';FBCR/'+fbcr+';FBMF/'+fbmf+';FBBD/'+fbbd+';FBPN/'+fbpn+';FBDV/'+fbdv+';FBSV/'+fbsv+';FBOP/19;FBCA/'+fbca+';]'
+                        ua = 'Dalvik/1.6.0 (Linux; U; Android 7.1.2; Pixel 2 Build/XYZ789) [FBAN/FB4A;FBAV/108.0.0.0.75;FBBV/54321987;FBDM/{density=3.25,width=1080,height=1920};FBLC/en_GB;FBRV/54321987;FBCR/O2;FBMF/Google;FBBD/Google;FBPN/com.facebook.katana;FBDV/Pixel_2;FBSV/9.0;FBOP/1;FBCA/arm64-v8a;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -924,7 +924,7 @@ def api5(ids,names,passlist):
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         en = random.choice(['en_US','en_GB'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                        ua = "Davik/2.1.0 (Linux; U; Android '+fbsv+'.0.0; '+model+' Build/'+''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))+' [FBAN/FB4A;FBAV/'+str(random.randint(111,555))+'.0.0.'+str(random.randrange(1,19))+'.'+str(random.randint(111,555))+';FBBV/'+str(random.randint(745000000,745999999))+';FBDM/{density=2.25,width=720,height=1452};FBLC/pl_PL;FBCR/T-Mobile.pl;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.adsmanager;FBDV/'+model+';FBSV/4.4.4;nullFBCA/armeabi-v7a:armeabi;]"
+                        ua = "Dalvik/1.6.0 (Linux; U; Android 8.0.0; SM-N950U Build/DEF456) [FBAN/FB4A;FBAV/109.0.0.0.88;FBBV/56789012;FBDM/{density=2.5,width=1440,height=2960};FBLC/en_US;FBRV/56789012;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-N950U;FBSV/10.0;FBOP/1;FBCA/x86_64;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -1151,7 +1151,7 @@ def lina1(ids,passlist):
                         fbrv = '0'
                         fban = 'FB4A'
                         fbpn = 'com.facebook.katana'
-                        ua = 'Davik/2.1.0 (Linux; U; Android '+android_version+'.0.1; '+model+' Build/'+build+') [FBAN/'+fban+';FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=2.97,width=720,height=1612};FBLC/'+fblc+';FBRV/'+str(random.randint(000000000,999999999))+';FBCR/'+fbcr+';FBMF/'+fbmf+';FBBD/'+fbbd+';FBPN/'+fbpn+';FBDV/'+fbdv+';FBSV/'+fbsv+';FBOP/19;FBCA/'+fbca+';]'
+                        ua = 'Dalvik/1.6.0 (Linux; U; Android 9.0; HTC U12+ Build/GHI789) [FBAN/FB4A;FBAV/110.0.0.0.101;FBBV/60123456;FBDM/{density=2.2,width=1440,height=2880};FBLC/en_US;FBRV/60123456;FBCR/AT&T;FBMF/HTC;FBBD/HTC;FBPN/com.facebook.katana;FBDV/HTC_U12_plus;FBSV/11.0;FBOP/1;FBCA/armeabi-v8a;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -1249,7 +1249,7 @@ def lina2(ids,passlist):
 			ffb=random.choice(fbks)
 			dvlk = random.choice(usr)
 			#1 method issue es ma ha
-			ua_string = 'Dalvik/2.1.0 (Linux; U; Android 10; Infinix X690B Build/QP1A.190711.020) [FBAN/MobileAdsManagerAndroid;FBAV/236.0.0.24.108;FBBV/405428495;FBRV/0;FBLC/en_US;FBMF/INFINIX MOBILITY LIMITED;FBBD/Infinix;FBDV/Infinix X690B;FBSV/10;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.97,width=720,height=1612};FB_FW/1;]'
+			ua_string = 'Dalvik/1.6.0 (Linux; U; Android 10.0; OnePlus 7T Build/JKL012) [FBAN/FB4A;FBAV/111.0.0.0.121;FBBV/63456789;FBDM/{density=2.8,width=1080,height=2400};FBLC/en_US;FBRV/63456789;FBCR/Verizon;FBMF/OnePlus;FBBD/OnePlus;FBPN/com.facebook.katana;FBDV/HD1905;FBSV/12.0;FBOP/1;FBCA/arm64;]
 			device_family_id = str(uuid.uuid4())
 			adid = str(uuid.uuid4())
 			machine_id = ''.join(random.choice(ascii_uppercase+ascii_lowercase+digits+'_') for _ in range(24))
@@ -1340,8 +1340,7 @@ def lina3(ids,passlist):
                         en = random.choice(['en_US','en_GB'])
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                        ua = "Davik/2.1.0 (Linux; U; Android '+fbsv+'.0.0; '+model+' Build/'+''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))+' [FBAN/FB4A;FBAV/'+str(random.randint(111,555))+'.0.0.'+str(random.randrange(1,19))+'.'+str(random.randint(111,555))+';FBBV/'+str(random.randint(745000000,745999999))+';FBDM/{density=2.25,width=720,height=1452};FBLC/pl_PL;FBCR/T-Mobile.pl;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.adsmanager;FBDV/'+model+';FBSV/4.4.4;nullFBCA/armeabi-v7a:armeabi;]"
-                               
+                        ua = 'Dalvik/1.6.0 (Linux; U; Android 11; Pixel 4a Build/MNO123) [FBAN/FB4A;FBAV/112.0.0.0.132;FBBV/67890123;FBDM/{density=3.1,width=1080,height=2340};FBLC/en_CA;FBRV/67890123;FBCR/Rogers;FBMF/Google;FBBD/Google;FBPN/com.facebook.katana;FBDV/Pixel_4a;FBSV/13.0;FBOP/1;FBCA/armeabi-v7a;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -1436,7 +1435,7 @@ def lina4(ids,passlist):
                         fbrv = '0'
                         fban = 'FB4A'
                         fbpn = 'com.facebook.katana'
-                        ua = 'Davik/2.1.0 (Linux; U; Android '+android_version+'.0.1; '+model+' Build/'+build+') [FBAN/'+fban+';FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=3.0,width=1440,height=3130};FBLC/'+fblc+';FBRV/'+str(random.randint(000000000,999999999))+';FBCR/'+fbcr+';FBMF/'+fbmf+';FBBD/'+fbbd+';FBPN/'+fbpn+';FBDV/'+fbdv+';FBSV/'+fbsv+';FBOP/19;FBCA/'+fbca+';]'
+                        ua = 'Dalvik/1.6.0 (Linux; U; Android 12; Samsung Galaxy S22 Build/PQR234) [FBAN/FB4A;FBAV/113.0.0.0.143;FBBV/71234567;FBDM/{density=2.6,width=1080,height=2400};FBLC/en_GB;FBRV/71234567;FBCR/O2;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-S906L;FBSV/14.0;FBOP/1;FBCA/x86;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -1531,7 +1530,7 @@ def lina5(ids,passlist):
                         fbrv = '0'
                         fban = 'FB4A'
                         fbpn = 'com.facebook.katana'
-                        ua = 'Davik/2.1.0 (Linux; U; Android '+android_version+'.0.1; '+model+' Build/'+build+') [FBAN/'+fban+';FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=3.0,width=1080,height=2246};FBLC/'+fblc+';FBRV/'+str(random.randint(000000000,999999999))+';FBCR/'+fbcr+';FBMF/'+fbmf+';FBBD/'+fbbd+';FBPN/'+fbpn+';FBDV/'+fbdv+';FBSV/'+fbsv+';FBOP/19;FBCA/'+fbca+';]'
+                        ua = 'Dalvik/1.6.0 (Linux; U; Android 13; Sony Xperia 5 III Build/STU345) [FBAN/FB4A;FBAV/114.0.0.0.154;FBBV/76543210;FBDM/{density=3.3,width=1080,height=2520};FBLC/en_US;FBRV/76543210;FBCR/T-Mobile;FBMF/Sony;FBBD/Sony;FBPN/com.facebook.katana;FBDV/Xperia_5_III;FBSV/15.0;FBOP/1;FBCA/arm64-v8a;]
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
